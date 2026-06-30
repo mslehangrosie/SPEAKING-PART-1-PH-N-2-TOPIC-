@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Speaking Part 1 - Ms Lê Hằng English</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(-45deg, #8854C0, #FF7597, #FDCB6E, #00C9A7);
+            --card-bg: rgba(255, 255, 255, 0.93);
+            --text-main: #2D3436;
+            --accent-pink: #FF7597;
+            --accent-purple: #8854C0;
+            --accent-green: #00C9A7;
+            --accent-yellow: #E1B12C;
+            --shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--primary-gradient);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Hiệu ứng nền loang động */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Lớp họa tiết SVG lơ lửng */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm1-61c3.16 0 5.72-2.56 5.72-5.72 0-3.16-2.56-5.72-5.72-5.72-3.16 0-5.72 2.56-5.72 5.72 0 3.16 2.56 5.72 5.72 5.72zm42 57c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM24 45c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm54-15c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM12 60c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm28 2c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm11-44c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm3-20c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm18 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM6 28c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm49 46c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-24-9c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-15 4c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: floatingPattern 60s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes floatingPattern {
+            from { background-position: 0 0; }
+            to { background-position: 500px 1000px; }
+        }
+
+        header {
+            text-align: center;
+            z-index: 2;
+            margin-bottom: 15px;
+            color: white;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        /* Khung thông báo cực kỳ quan trọng */
+        .alert-box {
+            background: #FFEAA7;
+            border-left: 6px solid #FF9F43;
+            color: #D35400;
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin: 0 auto 20px auto;
+            max-width: 1200px;
+            z-index: 2;
+            box-shadow: var(--shadow);
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .alert-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1.05rem;
+        }
+
+        /* Bố cục chính chứa Bài học và Tabs phải */
+        .main-container {
+            display: flex;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            gap: 20px;
+            flex: 1;
+            z-index: 2;
+            height: calc(100vh - 180px);
+            min-height: 500px;
+        }
+
+        /* Khung hiển thị nội dung học tập */
+        .content-area {
+            flex: 1;
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            overflow-y: auto;
+            border: 4px solid white;
+        }
+
+        /* Khung chứa các Tab ở bên phải, hỗ trợ cuộn dọc */
+        .tabs-sidebar {
+            width: 280px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            overflow-y: auto;
+            max-height: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+
+        /* Nút Tab */
+        .tab-btn {
+            width: 100%;
+            padding: 14px 16px;
+            background: white;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 4px solid #DFE6E9;
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            background: #FFF0F5;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-pink);
+            color: white;
+            border-bottom: 4px solid #D63031;
+            transform: scale(1.02);
+        }
+
+        /* CSS Content Elements */
+        .topic-view {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .topic-view.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .topic-header {
+            font-size: 2rem;
+            color: var(--accent-purple);
+            margin-bottom: 20px;
+            border-bottom: 3px dashed var(--accent-pink);
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Khung 4 câu hỏi tổng quan */
+        .overview-box {
+            background: #E8F8F5;
+            border: 2px dashed var(--accent-green);
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .overview-box h4 {
+            color: #0E6251;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .overview-box ol {
+            padding-left: 20px;
+            color: #117864;
+            font-weight: 600;
+        }
+
+        .overview-box li {
+            margin-bottom: 6px;
+        }
+
+        /* Khối câu hỏi chi tiết */
+        .question-block {
+            background: white;
+            border: 2px solid #E1B12C;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .question-text {
+            font-size: 1.15rem;
+            color: #2C3E50;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .direction-label {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .dir-yes { background: #D4EFDF; color: #196F3D; }
+        .dir-no { background: #FADBD8; color: #943126; }
+        .dir-normal { background: #E8F8F5; color: #117864; }
+
+        /* Sơ đồ gợi ý dạng cụm (arrow) */
+        .flow-container {
+            background: #F8F9FA;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .flow-step {
+            display: inline-flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #4A5568;
+            flex-wrap: wrap;
+            margin: 4px 0;
+        }
+
+        .flow-arrow {
+            color: var(--accent-pink);
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Câu trả lời hoàn chỉnh */
+        .full-answer {
+            background: #F0F3F4;
+            border-radius: 12px;
+            padding: 14px;
+            font-style: italic;
+            color: #2C3E50;
+            border-left: 4px solid var(--accent-pink);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* Bảng Paraphrase đạt Band 7.0+ */
+        .paraphrase-section {
+            margin-top: 30px;
+            background: #FFF4F7;
+            border: 2px solid var(--accent-pink);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .paraphrase-section h3 {
+            color: #C0392B;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .para-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+
+        .para-table th, .para-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #F0F3F4;
+            font-size: 0.95rem;
+        }
+
+        .para-table th {
+            background: var(--accent-pink);
+            color: white;
+            font-weight: 700;
+        }
+
+        .para-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .para-table tr:nth-child(even) {
+            background: #FAFAFA;
+        }
+
+        .word-highlight {
+            font-weight: 700;
+            color: var(--accent-purple);
+        }
+
+        /* Tùy chỉnh thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,0.15);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .main-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .tabs-sidebar {
+                width: 100%;
+                flex-direction: row;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                padding: 10px;
+            }
+            .tab-btn {
+                width: auto;
+                display: inline-flex;
+            }
+            .content-area {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Giáo viên tạo: Ms Lê Hằng English</h1>
+    </header>
+
+    <div class="alert-box">
+        <span class="alert-title">⚠️ LỜI NHẮC CỰC KỲ QUAN TRỌNG ⚠️</span>
+        SAU KHI HỌC XONG KIẾN THỨC TRONG FILE NÀY, CON HÃY LÊN WEB LUYENNOI ĐỂ THỰC HÀNH ĐỀU ĐẶN MỖI NGÀY (TỐI THIỂU 25 LẦN) VÀ GỬI KẾT QUẢ VÀO NHÓM ZALO. CHỈ CÓ LUYỆN TẬP ĐỀU ĐẶN MỚI GIÚP TĂNG ĐIỂM SPEAKING VÀ TỰ TIN HƠN TRONG PHÒNG THI.
+    </div>
+
+    <div style="max-width: 1300px; width: 100%; margin: 0 auto 15px auto; z-index: 2; background: rgba(255,255,255,0.95); border-radius: 16px; padding: 15px; box-shadow: var(--shadow); border-left: 6px solid var(--accent-purple);">
+        <strong style="color: var(--accent-purple); font-size: 1.05rem; display: block; margin-bottom: 6px;">💡 Cấu Trúc Trả Lời Chuẩn Chuyên Gia:</strong>
+        <span style="font-weight: 600; color: var(--text-main); font-size: 0.95rem;">Direct Answer (Paraphrase) ➜ Detail (WH-WORDS WHAT, WHEN, WHY, HOW, WHERE, WHO) / Example (Ví dụ quen thuộc)</span>
+        <div style="margin-top: 8px; background: #F8F9FA; padding: 10px; border-radius: 8px; font-size: 0.9rem;">
+            <strong>Ví dụ mẫu: Do you wear jeans?</strong><br>
+            <span class="direction-label dir-yes" style="margin: 4px 0;">Hướng YES</span> ➔ wear jeans quite often/ from time to time ➔ comfortable and easy to move around ➔ hang out with friends / go shopping <br>
+            <span class="direction-label dir-no" style="margin: 4px 0;">Hướng NO</span> ➔ not my first choice ➔ prefer dresses or skirts / look more feminine <br>
+            <span style="font-style: italic; display: block; margin-top: 4px; color: #555;">"To be honest, I wear jeans from time to time because they are comfortable and easy to move around in. I often put them on when hanging out with friends."</span>
+        </div>
+    </div>
+
+    <div class="main-container">
+        
+        <div class="content-area" id="contentArea">
+            
+            <div id="topic-childhood" class="topic-view active">
+                <h2 class="topic-header">🧸 Chủ đề: Childhood activities</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What were your favourite activities when you were a child?</li>
+                        <li>Did you prefer to do activities alone or with a group of people when you were a child?</li>
+                        <li>Are there any differences between the activities you liked when you were a child and those you like now?</li>
+                        <li>What are your favourite activities?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What were your favourite activities when you were a child?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Playing outdoor games <span class="flow-arrow">➔</span> ride bicycles / play catch <span class="flow-arrow">➔</span> gather with neighborhood kids every afternoon after finishing school</div>
+                    </div>
+                    <div class="full-answer">“My favorite activities were playing outdoor games like riding bicycles or playing catch with neighborhood kids every summer afternoon.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Did you prefer to do activities alone or with a group of people when you were a child?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Preferred a group of people <span class="flow-arrow">➔</span> more fun / less lonely <span class="flow-arrow">➔</span> playing traditional games with a big crowd of friends was always full of laughter</div>
+                    </div>
+                    <div class="full-answer">“I definitely preferred playing with a group of people because it was more fun. Playing team games with a crowd was always full of laughter.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Are there any differences between the activities you liked when you were a child and those you like now?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, completely changed <span class="flow-arrow">➔</span> outdoor active games to indoor digital entertainment <span class="flow-arrow">➔</span> used to run around outside, but now just scroll TikTok or play PC games</div>
+                    </div>
+                    <div class="full-answer">“Yes, they have completely changed. I used to run around outside all day, but now I mostly scroll TikTok or play PC games indoors.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What are your favourite activities?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Going to coffee shops and listening to music <span class="flow-arrow">➔</span> chill / talk with friends <span class="flow-arrow">➔</span> love finding quiet cafes on weekends to do my homework and chat</div>
+                    </div>
+                    <div class="full-answer">“Currently, my favorite activities are finding quiet coffee shops on weekends to do my homework and chatting with my classmates.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>favourite activities</td><td><span class="word-highlight">preferred pastimes / beloved pursuits</span></td><td>Hoạt động giải trí yêu thích</td></tr>
+                            <tr><td>play with friends</td><td><span class="word-highlight">socialize with peers / engage in group play</span></td><td>Tương tác, chơi cùng bạn bè</td></tr>
+                            <tr><td>completely changed</td><td><span class="word-highlight">undergone a complete transformation</span></td><td>Thay đổi hoàn toàn diện mạo/thói quen</td></tr>
+                            <tr><td>run around outside</td><td><span class="word-highlight">engage in outdoor physical recreation</span></td><td>Vận động ngoài trời</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-building" class="topic-view">
+                <h2 class="topic-header">🏢 Chủ đề: Building</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Are there tall buildings near your home?</li>
+                        <li>Do you want to live in a tall building?</li>
+                        <li>Is there a building that you would like to visit?</li>
+                        <li>Do you take photos of buildings?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Are there tall buildings near your home?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a lot <span class="flow-arrow">➔</span> modern urban area / developing <span class="flow-arrow">➔</span> there are several new 30-story apartment buildings right across from my street</div>
+                    </div>
+                    <div class="full-answer">“Yes, there are a lot. I live in a modern urban area, and there are several new 30-story apartment buildings right across from my street.”</div>
+                    
+                    <div class="direction-label dir-no" style="margin-top: 15px;">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ No, not at all <span class="flow-arrow">➔</span> quiet countryside / low-rise area <span class="flow-arrow">➔</span> most houses are just 2 or 3 floors max, surrounded by trees and gardens</div>
+                    </div>
+                    <div class="full-answer">“No, not at all. I live in a quiet countryside area, so most houses are just two floors max and surrounded by trees.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Do you want to live in a tall building?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, would love to <span class="flow-arrow">➔</span> amazing view / safe <span class="flow-arrow">➔</span> living on the 20th floor means less mosquito bite and a great city view at night</div>
+                    </div>
+                    <div class="full-answer">“Yes, I would love to live in a tall building. Living on a high floor means fewer mosquitoes and an amazing city view at night.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Is there a building that you would like to visit?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Landmark 81 in Ho Chi Minh City <span class="flow-arrow">➔</span> tallest skyscraper in Vietnam / famous <span class="flow-arrow">➔</span> want to go to the observation deck to see the whole city view</div>
+                    </div>
+                    <div class="full-answer">“I would love to visit Landmark 81 in Ho Chi Minh City. It’s the tallest skyscraper in Vietnam, and I want to go to the top floor to see the view.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you take photos of buildings?</div>
+                    <div class="direction-label dir-no">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Rarely do that <span class="flow-arrow">➔</span> buildings look boring / prefer people <span class="flow-arrow">➔</span> only snap a picture if a building has unique architecture or beautiful lights at night</div>
+                    </div>
+                    <div class="full-answer">“Rarely, to be honest. I think buildings look a bit boring, so I prefer taking pictures of my friends or beautiful natural scenery instead.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>tall building</td><td><span class="word-highlight">high-rise structure / skyscraper / vertical complex</span></td><td>Nhà cao tầng, tòa nhà chọc trời</td></tr>
+                            <tr><td>around my street</td><td><span class="word-highlight">in the immediate vicinity of my neighborhood</span></td><td>Khu vực xung quanh nơi ở</td></tr>
+                            <tr><td>amazing city view</td><td><span class="word-highlight">breathtaking panoramic view of the cityscape</span></td><td>Tầm nhìn toàn cảnh thành phố cực đẹp</td></tr>
+                            <tr><td>unique architecture</td><td><span class="word-highlight">distinctive architectural features / avant-garde design</span></td><td>Kiến trúc độc đáo, mới lạ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-scenery" class="topic-view">
+                <h2 class="topic-header">🌅 Chủ đề: Scenery</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you prefer the mountains or the sea?</li>
+                        <li>Do you like to take scenery pictures?</li>
+                        <li>Do you look out the window at the scenery when travelling by bus or car?</li>
+                        <li>What are the most beautiful sights you have seen while travelling?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you prefer the mountains or the sea?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Lean heavily towards the sea <span class="flow-arrow">➔</span> love swimming / refreshing breeze <span class="flow-arrow">➔</span> walking on the sandy beach while drinking coconut water is the best vacation</div>
+                    </div>
+                    <div class="full-answer">“I lean heavily towards the sea because I love swimming. Walking on a sandy beach while drinking fresh coconut water is the best summer vacation.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Do you like to take scenery pictures?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, quite like it <span class="flow-arrow">➔</span> beautiful colors / wallpapers <span class="flow-arrow">➔</span> snap photos of nature whenever my family goes on a holiday road trip</div>
+                    </div>
+                    <div class="full-answer">“Yes, I quite like it. I always snap beautiful photos of nature on my phone whenever my family goes on a holiday road trip.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you look out the window at the scenery when travelling by bus or car?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, always <span class="flow-arrow">➔</span> keeps me from getting bored / therapeutic <span class="flow-arrow">➔</span> looking at the passing green trees and local houses makes the long trip fly by</div>
+                    </div>
+                    <div class="full-answer">“Yes, always. Looking at the passing green trees and local houses keeps me from getting bored and makes the long trip fly by.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What are the most beautiful sights you have seen while travelling?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Sunset over the beach in Da Nang <span class="flow-arrow">➔</span> sky turned orange and purple / magical <span class="flow-arrow">➔</span> sat on the sand with friends and it looked like a movie scene</div>
+                    </div>
+                    <div class="full-answer">“The most beautiful sight was the sunset over Da Nang beach. The sky turned completely orange and purple, making it look like a movie scene.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>prefer the sea</td><td><span class="word-highlight">have a strong partiality for coastal destinations</span></td><td>Thích đi biển hơn</td></tr>
+                            <tr><td>scenery pictures</td><td><span class="word-highlight">landscape photography / picturesque vistas</span></td><td>Ảnh phong cảnh thiên nhiên</td></tr>
+                            <tr><td>therapeutic</td><td><span class="word-highlight">immensely soothing / a form of psychological relief</span></td><td>Có tính chữa lành, thư giãn tinh thần</td></tr>
+                            <tr><td>looked like a movie scene</td><td><span class="word-highlight">was reminiscent of a cinematic masterpiece</span></td><td>Đẹp như một thước phim điện ảnh</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-reading" class="topic-view">
+                <h2 class="topic-header">📚 Chủ đề: Reading</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you like reading?</li>
+                        <li>Do you prefer scanning or detailed reading?</li>
+                        <li>When do you need to read carefully, and when not?</li>
+                        <li>Do you prefer to read on paper or on a screen?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you like reading?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, quite like it <span class="flow-arrow">➔</span> broadens my mind / good stories <span class="flow-arrow">➔</span> love reading Japanese manga or motivational books before going to sleep</div>
+                    </div>
+                    <div class="full-answer">“Yes, I quite like reading because it broadens my mind. I love reading Japanese manga or motivational books before going to sleep.”</div>
+                    
+                    <div class="direction-label dir-no" style="margin-top: 15px;">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Not really <span class="flow-arrow">➔</span> find it a bit dry / short attention span <span class="flow-arrow">➔</span> prefer watching video summaries on TikTok or YouTube because it's faster and fun</div>
+                    </div>
+                    <div class="full-answer">“To be honest, not really. I have a short attention span and prefer watching video summaries on YouTube because it's much faster.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Do you prefer scanning or detailed reading?</div>
+                    <div class="direction-label dir-normal">Gắn với ôn thi IELTS</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Depends on what I'm reading <span class="flow-arrow">➔</span> scan online news or social media posts / fast <span class="flow-arrow">➔</span> read details when practicing for my IELTS reading test</div>
+                    </div>
+                    <div class="full-answer">“It depends on the context. I scan online news very quickly, but I have to practice detailed reading when doing my IELTS test preparation.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. When do you need to read carefully, and when not?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Read carefully during exam instructions <span class="flow-arrow">➔</span> avoid losing marks / important <span class="flow-arrow">➔</span> don't need care when reading Facebook comments or funny memes</div>
+                    </div>
+                    <div class="full-answer">“I need to read carefully during school exam instructions to avoid losing marks, but I don't care much when browsing Facebook comments.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you prefer to read on paper or on a screen?</div>
+                    <div class="direction-label dir-yes">Hướng SCREEN</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Prefer reading on a screen <span class="flow-arrow">➔</span> super convenient / free ebooks <span class="flow-arrow">➔</span> can read everything on my smartphone anytime while lying down in my bed</div>
+                    </div>
+                    <div class="full-answer">“I prefer reading on a screen because it’s super convenient. I can download free ebooks and read them on my phone while lying in bed.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>broadens my mind</td><td><span class="word-highlight">widens my horizons / enriches my knowledge base</span></td><td>Mở rộng tầm mắt, tích lũy kiến thức</td></tr>
+                            <tr><td>short attention span</td><td><span class="word-highlight">struggle with sustained concentration</span></td><td>Khó tập trung lâu, nhanh chán</td></tr>
+                            <tr><td>read carefully</td><td><span class="word-highlight">peruse with close attention / engage in critical reading</span></td><td>Đọc kỹ lưỡng, cẩn thận</td></tr>
+                            <tr><td>super convenient</td><td><span class="word-highlight">unparalleled convenience / highly accessible</span></td><td>Cực kỳ tiện lợi</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-sports" class="topic-view">
+                <h2 class="topic-header">👥 Chủ đề: Sports team</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Have you ever been part of a sports team?</li>
+                        <li>Are team sports popular in your culture?</li>
+                        <li>Do you like watching team games? Why?</li>
+                        <li>What are the differences between team sports and individual sports?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Have you ever been part of a sports team?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, my class football team <span class="flow-arrow">➔</span> played as a goalkeeper / school tournament <span class="flow-arrow">➔</span> we practiced every afternoon and it built great memories</div>
+                    </div>
+                    <div class="full-answer">“Yes, I was part of my class football team for the school tournament last year. We practiced every afternoon and built great memories.”</div>
+                    
+                    <div class="direction-label dir-no" style="margin-top: 15px;">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ No, never <span class="flow-arrow">➔</span> terrible at sports / clumsy <span class="flow-arrow">➔</span> prefer being a cheerleader or sitting on the bench to support my classmates instead</div>
+                    </div>
+                    <div class="full-answer">“No, never. I’m quite clumsy and terrible at sports, so I prefer sitting on the bench to cheer for my classmates instead.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Are team sports popular in your culture?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Immensely popular <span class="flow-arrow">➔</span> football is the king sport / national passion <span class="flow-arrow">➔</span> everyone talks about matches at school or coffee shops whenever Vietnam plays</div>
+                    </div>
+                    <div class="full-answer">“Yes, team sports like football are immensely popular in Vietnam. Everyone talks about matches at school whenever our national team plays.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you like watching team games? Why?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, love it <span class="flow-arrow">➔</span> high dramatic energy / exciting <span class="flow-arrow">➔</span> seeing how players work together to score a goal in the last minute is amazing</div>
+                    </div>
+                    <div class="full-answer">“Yes, I love it because the energy is so exciting. Seeing how players work together to score a goal in the last minute is amazing.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What are the differences between team sports and individual sports?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Cooperation versus solo effort <span class="flow-arrow">➔</span> team sports require good communication and unity <span class="flow-arrow">➔</span> individual sports like running depend 100% on your own stamina</div>
+                    </div>
+                    <div class="full-answer">“The main difference is cooperation versus solo effort. Team sports require good unity, while individual sports depend entirely on your own stamina.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>immensely popular</td><td><span class="word-highlight">deeply ingrained in our sporting culture / ubiquitous</span></td><td>Cực kỳ phổ biến, quen thuộc</td></tr>
+                            <tr><td>work together</td><td><span class="word-highlight">collaborate seamlessly / display exceptional camaraderie</span></td><td>Phối hợp ăn ý, tinh thần đồng đội</td></tr>
+                            <li>cooperation</li><td><span class="word-highlight">collective synergy / collective effort</span></td><td>Sự hợp lực, làm việc nhóm</td></tr>
+                            <tr><td>stamina</td><td><span class="word-highlight">physical endurance / physiological resilience</span></td><td>Sức bền thể chất cá nhân</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-walking" class="topic-view">
+                <h2 class="topic-header">🚶 Chủ đề: Walking</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you walk a lot?</li>
+                        <li>Did you often go outside to have a walk when you were a child?</li>
+                        <li>Where did you go for a walk lately?</li>
+                        <li>Where would you like to take a long walk if you had the chance?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you walk a lot?</div>
+                    <div class="direction-label dir-no">Hướng NO (Sát thực tế học sinh)</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Not as much as I should <span class="flow-arrow">➔</span> rely heavily on electric scooters / lazy <span class="flow-arrow">➔</span> weather is usually too hot and humid to walk long distances</div>
+                    </div>
+                    <div class="full-answer">“To be honest, not as much as I should. I rely heavily on my electric scooter to go to school, and the weather is often too hot to walk.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Did you often go outside to have a walk when you were a child?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, quite often <span class="flow-arrow">➔</span> walk with my grandparents / after dinner <span class="flow-arrow">➔</span> strolled around the neighborhood park to buy snacks and ice cream</div>
+                    </div>
+                    <div class="full-answer">“Yes, quite often. I used to go for a walk with my grandparents after dinner, and we usually stopped by a local store to buy ice cream.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Where did you go for a walk lately?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Walked around the local lake <span class="flow-arrow">➔</span> last Sunday evening / chill <span class="flow-arrow">➔</span> went with my best friend to clear my mind after a stressful week of studying</div>
+                    </div>
+                    <div class="full-answer">“Lately, I went for a walk around the local lake last Sunday evening. I went with my best friend to clear my mind after a stressful exam week.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Where would you like to take a long walk if you had the chance?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Pedestrian streets in Hanoi / Ho Chi Minh City <span class="flow-arrow">➔</span> lively atmosphere / street food <span class="flow-arrow">➔</span> walk around with friends at night without worrying about traffic</div>
+                    </div>
+                    <div class="full-answer">“I would love to take a long walk on the weekend pedestrian streets in Hanoi. It has a lively atmosphere and plenty of delicious street food.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý năng / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>walk a lot</td><td><span class="word-highlight">accumulate a high daily step count / travel on foot</span></td><td>Đi bộ nhiều hàng ngày</td></tr>
+                            <tr><td>too hot and humid</td><td><span class="word-highlight">prohibitively sweltering and muggy</span></td><td>Thời tiết quá nóng bức và oi ả</td></tr>
+                            <tr><td>clear my mind</td><td><span class="word-highlight">decompress / alleviate mental fatigue / clear my head</span></td><td>Giải tỏa đầu óc, bớt căng thẳng</td></tr>
+                            <tr><td>pedestrian streets</td><td><span class="word-highlight">car-free zones / walking-only thoroughfares</span></td><td>Phố đi bộ, khu vực cấm xe</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-typing" class="topic-view">
+                <h2 class="topic-header">⌨️ Chủ đề: Typing</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>When did you learn how to type on a keyboard?</li>
+                        <li>Do you type on a desktop or laptop keyboard every day?</li>
+                        <li>How do you improve your typing?</li>
+                        <li>Do you prefer typing or handwriting?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. When did you learn how to type on a keyboard?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Around 11 years old <span class="flow-arrow">➔</span> computer class in primary school / basic skills <span class="flow-arrow">➔</span> typed simple text documents and played keyboard games for fun</div>
+                    </div>
+                    <div class="full-answer">“I learned how to type when I was around 11 years old during school computer classes, mostly by playing fun keyboard games.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Do you type on a desktop or laptop keyboard every day?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, every single day <span class="flow-arrow">➔</span> use laptop for school assignments / research <span class="flow-arrow">➔</span> spend hours typing essays or PowerPoint presentations for my group projects</div>
+                    </div>
+                    <div class="full-answer">“Yes, every single day. I rely on my laptop to type essays and create PowerPoint presentations for my high school group projects.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. How do you improve your typing?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Practice through chatting / online practice <span class="flow-arrow">➔</span> text friends on Facebook Messenger <span class="flow-arrow">➔</span> typing speed naturally gets faster the more I text online</div>
+                    </div>
+                    <div class="full-answer">“I mostly improve my typing by chatting with friends on Facebook Messenger every day. My speed naturally gets faster without trying.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you prefer typing or handwriting?</div>
+                    <div class="direction-label dir-yes">Hướng TYPING</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Prefer typing <span class="flow-arrow">➔</span> much faster / looks neat <span class="flow-arrow">➔</span> can delete mistakes instantly without making the test paper look messy with correction tape</div>
+                    </div>
+                    <div class="full-answer">“I prefer typing because it’s much faster and looks neat. I can correct my spelling mistakes instantly without using messy correction tape.”</div>
+                    
+                    <div class="direction-label dir-no" style="margin-top: 15px;">Hướng HANDWRITING</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Prefer handwriting <span class="flow-arrow">➔</span> helps me remember lessons better / traditional <span class="flow-arrow">➔</span> taking handwritten notes in my notebook makes me focus more during class</div>
+                    </div>
+                    <div class="full-answer">“I prefer handwriting because it helps me remember lessons better. Taking notes in my notebook makes me focus much more during class.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>type on a keyboard</td><td><span class="word-highlight">input text digitally / master keyboard proficiency</span></td><td>Đánh máy, gõ bàn phím</td></tr>
+                            <tr><td>school assignments</td><td><span class="word-highlight">academic coursework / research papers</span></td><td>Bài tập lớn, tiểu luận ở trường</td></tr>
+                            <tr><td>typing speed</td><td><span class="word-highlight">wpm (words per minute) rate / words-per-minute velocity</span></td><td>Tốc độ gõ chữ</td></tr>
+                            <tr><td>looks neat</td><td><span class="word-highlight">presents a highly polished and legible layout</span></td><td>Gọn gàng, sạch đẹp, dễ nhìn</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-food" class="topic-view">
+                <h2 class="topic-header">🍲 Chủ đề: Food</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What is your favourite food?</li>
+                        <li>What kind of food did you like when you were young?</li>
+                        <li>Has your favourite food changed since you were a child?</li>
+                        <li>Do you eat different foods at different times of the year?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What is your favourite food?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Hands down, Banh Mi <span class="flow-arrow">➔</span> Vietnamese street food / crispy and savory <span class="flow-arrow">➔</span> perfect quick breakfast for high school students on a rushed morning</div>
+                    </div>
+                    <div class="full-answer">“Hands down, my favorite food is Banh Mi. It's crispy, savory, and the perfect quick breakfast for a student on a rushed morning.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What kind of food did you like when you were young?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Loved fried chicken and French fries <span class="flow-arrow">➔</span> typical kid choices / greasy and tasty <span class="flow-arrow">➔</span> always begged my parents to take me to Lotteria on weekends</div>
+                    </div>
+                    <div class="full-answer">“When I was young, I was absolutely obsessed with fried chicken and French fries. I always begged my parents to take me to Lotteria on weekends.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Has your favourite food changed since you were a child?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a little bit <span class="flow-arrow">➔</span> care more about health now <span class="flow-arrow">➔</span> used to love fast food, but now prefer traditional home-cooked meals made by my mother</div>
+                    </div>
+                    <div class="full-answer">“Yes, it has changed a bit. I used to love greasy fast food, but now I prefer healthy, traditional home-cooked meals made by my mom.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you eat different foods at different times of the year?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, definitely <span class="flow-arrow">➔</span> follow the weather changes <span class="flow-arrow">➔</span> love eating hot soup and hotpot in winter, but switch to iced bingsu and fruits in summer</div>
+                    </div>
+                    <div class="full-answer">“Yes, definitely. I love eating hot noodles or hotpot during the chilly winter, but I switch to iced bingsu and fruits in the summer.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>favourite food</td><td><span class="word-highlight">culinary preference / ultimate comfort food</span></td><td>Món ăn yêu thích nhất</td></tr>
+                            <tr><td>greasy and tasty</td><td><span class="word-highlight">highly indulgent / flavorful yet hyper-palatable</span></td><td>Món ăn béo ngậy ngon miệng</td></tr>
+                            <tr><td>home-cooked meals</td><td><span class="word-highlight">wholesome domestic gastronomy / homemade dishes</span></td><td>Cơm nhà nấu bổ dưỡng</td></tr>
+                            <tr><td>follow weather changes</td><td><span class="word-highlight">align with seasonal meteorological shifts</span></td><td>Thay đổi theo mùa, thời tiết</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-sparetime" class="topic-view">
+                <h2 class="topic-header">⏳ Chủ đề: Spare time</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you often have free time?</li>
+                        <li>What do you usually do in your spare time?</li>
+                        <li>Do you have more free time on weekdays or at weekends?</li>
+                        <li>Which day do you have more free time on, Saturday or Sunday?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you often have free time?</div>
+                    <div class="direction-label dir-no">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Rarely have free time <span class="flow-arrow">➔</span> swamped with homework and extra classes / grade 11/12 pressure <span class="flow-arrow">➔</span> mostly busy studying from morning until late night</div>
+                    </div>
+                    <div class="full-answer">“To be honest, rarely. As a high school student, I am swamped with schoolwork and extra classes from morning until late night.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What do you usually do in your spare time?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Lie on bed and chill <span class="flow-arrow">➔</span> watch YouTube / scroll TikTok <span class="flow-arrow">➔</span> sometimes take a quick nap to recharge my battery after heavy school hours</div>
+                    </div>
+                    <div class="full-answer">“I usually just lie on my bed and scroll through TikTok to relax. Sometimes I take a quick nap to recharge my battery after school.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you have more free time on weekdays or at weekends?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Definitely at weekends <span class="flow-arrow">➔</span> weekdays are fully packed with school timetable <span class="flow-arrow">➔</span> Sunday is the only day I can unplug from homework and sleep in</div>
+                    </div>
+                    <div class="full-answer">“Definitely at weekends. Weekdays are fully packed with school lessons, so Sunday is my only chance to sleep in and relax.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Which day do you have more free time on, Saturday or Sunday?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Sunday is much freer <span class="flow-arrow">➔</span> Saturday morning still have to attend extra math/English classes <span class="flow-arrow">➔</span> Sunday is strictly reserved for sleeping and resting</div>
+                    </div>
+                    <div class="full-answer">“Sunday is much freer for me. I still have to attend extra classes on Saturday morning, leaving Sunday as my only real day off.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>swamped with homework</td><td><span class="word-highlight">innundated with a mountain of academic duties</span></td><td>Ngập đầu trong đống bài tập</td></tr>
+                            <tr><td>recharge my battery</td><td><span class="word-highlight">recuperate / restore my optimal energy levels</span></td><td>Hồi phục năng lượng thể chất</td></tr>
+                            <tr><td>unplug from homework</td><td><span class="word-highlight">detach completely from scholastic pressures</span></td><td>Thoát khỏi áp lực học tập để nghỉ ngơi</td></tr>
+                            <tr><td>real day off</td><td><span class="word-highlight">genuine period of absolute respite</span></td><td>Ngày nghỉ trọn vẹn không vướng bận</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-hobby" class="topic-view">
+                <h2 class="topic-header">🎨 Chủ đề: Hobby</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you have any hobbies?</li>
+                        <li>Did you have any hobbies when you were a child?</li>
+                        <li>Do you have a hobby that you've had since childhood?</li>
+                        <li>Do you have the same hobbies as your family members?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you have any hobbies?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, playing online mobile games <span class="flow-arrow">➔</span> Arena of Valor (Liên Quân) / fun <span class="flow-arrow">➔</span> play a few matches with my classmates during weekends to unwind</div>
+                    </div>
+                    <div class="full-answer">“Yes, my main hobby is playing mobile games like Arena of Valor. I love playing a few matches with my classmates on weekends to unwind.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Did you have any hobbies when you were a child?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, collecting stickers <span class="flow-arrow">➔</span> loved cute cartoon characters / colorful <span class="flow-arrow">➔</span> pasted them all over my desk and primary school notebooks</div>
+                    </div>
+                    <div class="full-answer">“Yes, I loved collecting stickers when I was a kid. I used to paste cute cartoon stickers all over my desk and school notebooks.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you have a hobby that you've had since childhood?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, watching anime/cartoons <span class="flow-arrow">➔</span> started since primary school / never stopped <span class="flow-arrow">➔</span> still a great way for me to relax after a stressful day</div>
+                    </div>
+                    <div class="full-answer">“Yes, watching anime. I started this habit back in primary school and still watch it today to relax after a stressful day of studying.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you have the same hobbies as your family members?</div>
+                    <div class="direction-label dir-no">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Not at all <span class="flow-arrow">➔</span> generational gap / different tastes <span class="flow-arrow">➔</span> parents love gardening and watching news, while I prefer playing digital games and listening to pop music</div>
+                    </div>
+                    <div class="full-answer">“Not at all, we have a bit of a generational gap. My parents love gardening and watching the news, while I’m into mobile gaming.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>unwind</td><td><span class="word-highlight">alleviate stress / indulge in a form of pure escapism</span></td><td>Xả stress, thư giãn đầu óc</td></tr>
+                            <tr><td>never stopped</td><td><span class="word-highlight">maintained this habit continuously without interruption</span></td><td>Duy trì thói quen không gián đoạn</td></tr>
+                            <tr><td>generational gap</td><td><span class="word-highlight">pronounced generational divide in recreational preferences</span></td><td>Khoảng cách thế hệ về mặt sở thích</td></tr>
+                            <tr><td>into mobile gaming</td><td><span class="word-highlight">deeply enthusiastic about mobile e-sports</span></td><td>Đam mê chơi trò chơi điện tử di động</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-lifestages" class="topic-view">
+                <h2 class="topic-header">🎂 Chủ đề: Life stages</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you enjoy being the age you are now?</li>
+                        <li>What do you think is the most important at the moment?</li>
+                        <li>Do you have any plans for the next five years?</li>
+                        <li>What did you often do with your friends in your childhood?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you enjoy being the age you are now?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, quite like it <span class="flow-arrow">➔</span> young and full of energy / hang out easily <span class="flow-arrow">➔</span> can make my own choices about fashion and friends without much control</div>
+                    </div>
+                    <div class="full-answer">“Yes, I quite like being a teenager. I’m young, full of energy, and can make my own choices about my fashion and hairstyles.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What do you think is the most important at the moment?</div>
+                    <div class="direction-label dir-normal">Đúng tâm lý HS</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Passing my exams with high marks <span class="flow-arrow">➔</span> get into my dream university / secure my future <span class="flow-arrow">➔</span> standard goal for every high school student right now</div>
+                    </div>
+                    <div class="full-answer">“I think passing my upcoming exams with flying colors is the most important thing right now, so I can get into my dream university.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you have any plans for the next five years?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Graduate from university <span class="flow-arrow">➔</span> find a decent part-time job / independent <span class="flow-arrow">➔</span> hope to improve my English fluency and travel around Vietnam with friends</div>
+                    </div>
+                    <div class="full-answer">“In the next five years, I plan to graduate from university and find a decent job. I also hope to travel around Vietnam with my friends.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What did you often do with your friends in your childhood?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Played carefree neighborhood games <span class="flow-arrow">➔</span> hide-and-seek / football on the street <span class="flow-arrow">➔</span> we didn't have smartphones back then, so we just ran around outside</div>
+                    </div>
+                    <div class="full-answer">“We used to play carefree games like hide-and-seek or football on the street. We didn't have smartphones back then, so we just ran around outside.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>full of energy</td><td><span class="word-highlight">exuberant / bursting with youthful vitality</span></td><td>Tràn đầy năng lượng tuổi trẻ</td></tr>
+                            <tr><td>passing my exams</td><td><span class="word-highlight">acing my upcoming examinations with flying colors</span></td><td>Vượt qua kỳ thi với điểm số cao chót vót</td></tr>
+                            <tr><td>decent job</td><td><span class="word-highlight">gainful and prestigious employment</span></td><td>Công việc ổn định, thu nhập tốt</td></tr>
+                            <tr><td>carefree games</td><td><span class="word-highlight">lighthearted and unburdened recreational activities</span></td><td>Trò chơi tuổi thơ vô lo vô nghĩ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-memory" class="topic-view">
+                <h2 class="topic-header">🧠 Chủ đề: Memory</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Are you good at memorising things?</li>
+                        <li>What do you need to remember in your daily life?</li>
+                        <li>How do you remember important things?</li>
+                        <li>Have you ever forgotten something important?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Are you good at memorising things?</div>
+                    <div class="direction-label dir-no">Hướng NO (Phù hợp học sinh hay quên)</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Honestly, pretty bad <span class="flow-arrow">➔</span> forget things easily / gold fish memory <span class="flow-arrow">➔</span> often forget where I left my school pens or keys 5 minutes ago</div>
+                    </div>
+                    <div class="full-answer">“Honestly, I have a terrible goldfish memory. I often forget where I left my school pens or keys just five minutes ago.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What do you need to remember in your daily life?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ A lot of school-related schedules <span class="flow-arrow">➔</span> homework deadlines / test dates <span class="flow-arrow">➔</span> also need to remember to charge my electric scooter battery every night</div>
+                    </div>
+                    <div class="full-answer">“I need to remember a lot of school deadlines, exam dates, and simple things like charging my electric scooter battery every night.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. How do you remember important things?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Use smartphone reminders and notes <span class="flow-arrow">➔</span> sticky notes / digital alerts <span class="flow-arrow">➔</span> write down urgent assignments on a sticky note and paste it on my laptop</div>
+                    </div>
+                    <div class="full-answer">“I mostly rely on smartphone reminders. I also write urgent assignments on sticky notes and paste them right onto my laptop screen.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Have you ever forgotten something important?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a major mistake <span class="flow-arrow">➔</span> forgot to bring my calculator for a math test / panicked <span class="flow-arrow">➔</span> had to borrow a spare one from the teacher at the last minute</div>
+                    </div>
+                    <div class="full-answer">“Yes, I once completely forgot to bring my calculator for a final math test. I panicked a lot and had to borrow one from my teacher.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>gold fish memory</td><td><span class="word-highlight">notoriously absent-minded / subpar retention capacity</span></td><td>Não cá vàng, trí nhớ ngắn hạn ngắn</td></tr>
+                            <tr><td>homework deadlines</td><td><span class="word-highlight">academic cut-off dates / submission timelines</span></td><td>Hạn nộp bài tập về nhà</td></tr>
+                            <tr><td>rely on smartphone</td><td><span class="word-highlight">depend heavily on automated digital notifications</span></td><td>Phụ thuộc vào thông báo nhắc nhở điện thoại</td></tr>
+                            <tr><td>panicked a lot</td><td><span class="word-highlight">was overcome with intense anxiety / fell into utter panic</span></td><td>Hoảng loạn cực độ vì gặp sự cố</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-crowded" class="topic-view">
+                <h2 class="topic-header">👥 Chủ đề: Crowded place</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Is the city where you live crowded?</li>
+                        <li>Is there a crowded place near where you live?</li>
+                        <li>Do you like crowded places?</li>
+                        <li>Do most people like crowded places?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Is the city where you live crowded?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, very densely populated <span class="flow-arrow">➔</span> traffic jams every day / bustling <span class="flow-arrow">➔</span> streets are packed with motorbikes during rush hours when school ends</div>
+                    </div>
+                    <div class="full-answer">“Yes, it’s very crowded. The streets are always packed with motorbikes during rush hours at 5 PM when school ends.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Is there a crowded place near where you live?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a popular local night market / shopping mall <span class="flow-arrow">➔</span> right in my district / popular with teens <span class="flow-arrow">➔</span> gets super packed with people on Saturday nights</div>
+                    </div>
+                    <div class="full-answer">“Yes, there is a very popular local night market near my house. It gets super packed with young people on Saturday nights.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you like crowded places?</div>
+                    <div class="direction-label dir-no">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Absolutely not <span class="flow-arrow">➔</span> too noisy and hot / drains my energy <span class="flow-arrow">➔</span> prefer staying at home in my air-conditioned room to watch movies in peace</div>
+                    </div>
+                    <div class="full-answer">“Absolutely not. Crowded places are way too noisy and hot, which drains my energy. I prefer staying at home in my quiet room.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do most people like crowded places?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Young people do, older people don't <span class="flow-arrow">➔</span> teens love the exciting atmosphere / social spots <span class="flow-arrow">➔</span> adults find it exhausting and prefer quiet countryside venues</div>
+                    </div>
+                    <div class="full-answer">“I think teenagers love crowded places because of the exciting atmosphere, but older people find them exhausting and prefer quiet spaces.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>crowded city</td><td><span class="word-highlight">heavily congested metropolis / bustling urban core</span></td><td>Thành phố đông đúc dân cư, chật chội</td></tr>
+                            <tr><td>super packed</td><td><span class="word-highlight">teeming with people / bursting at the seams</span></td><td>Quá tải, chật ních người qua lại</td></tr>
+                            <tr><td>drains my energy</td><td><span class="word-highlight">induces sensory overload / saps my stamina</span></td><td>Làm kiệt quệ năng lượng và tinh thần</td></tr>
+                            <tr><td>exciting atmosphere</td><td><span class="word-highlight">vibrant and electric ambiance</span></td><td>Bầu không khí náo nhiệt, sôi động</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-gifts" class="topic-view">
+                <h2 class="topic-header">🎁 Chủ đề: Gifts</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Have you ever received a great gift?</li>
+                        <li>What gift have you received recently?</li>
+                        <li>Do you think you are good at choosing gifts?</li>
+                        <li>What do you consider when choosing a gift?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Have you ever received a great gift?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, an amazing present <span class="flow-arrow">➔</span> a brand new electric scooter from my parents <span class="flow-arrow">➔</span> given when I entered high school / made commuting so much easier</div>
+                    </div>
+                    <div class="full-answer">“Yes, I received a brand new electric scooter from my parents when I entered grade 10. It made commuting to school so much easier.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What gift have you received recently?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ A cute key chain / notebook <span class="flow-arrow">➔</span> given by my best friend / last week <span class="flow-arrow">➔</span> simple birthday surprise that I hooked directly onto my school backpack</div>
+                    </div>
+                    <div class="full-answer">“I recently received a cute anime keychain from my best friend last week. I hooked it directly onto my school backpack.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you think you are good at choosing gifts?</div>
+                    <div class="direction-label dir-no">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Honestly, quite bad <span class="flow-arrow">➔</span> never know what people want / overthink <span class="flow-arrow">➔</span> usually end up just buying a milk tea voucher or a cute notebook for my friends</div>
+                    </div>
+                    <div class="full-answer">“Honestly, I'm quite bad at it because I always overthink. I usually end up just buying a milk tea voucher or a cute notebook for my friends.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What do you consider when choosing a gift?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Focus on practicality and hobbies <span class="flow-arrow">➔</span> something they can use daily / match their style <span class="flow-arrow">➔</span> don't want to buy expensive things that are useless</div>
+                    </div>
+                    <div class="full-answer">“I always look for something practical that my friends can use daily at school, like a cool pen case or a nice tote bag.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>made commuting easier</td><td><span class="word-highlight">substantially facilitated my daily transportation</span></td><td>Giúp việc di chuyển đi học thuận tiện hơn</td></tr>
+                            <tr><td>overthink</td><td><span class="word-highlight">paralyzed by chronic indecision / over-analyze things</span></td><td>Suy nghĩ quá mức, đắn đo mãi</td></tr>
+                            <tr><td>practicality</td><td><span class="word-highlight">functional utility / functional value</span></td><td>Tính thực dụng, giá trị sử dụng thực tế</td></tr>
+                            <tr><td>useless things</td><td><span class="word-highlight">superfluous and decorative items lacking utility</span></td><td>Vật dụng thừa thãi, không dùng được</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-city" class="topic-view">
+                <h2 class="topic-header">🏙️ Chủ đề: The city you live in</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What city do you live in?</li>
+                        <li>How long have you lived in this city?</li>
+                        <li>Is this city your permanent residence?</li>
+                        <li>Do you like this city? Why?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What city do you live in?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Currently live in Hanoi / HCMC / a small province <span class="flow-arrow">➔</span> famous for its vibrant street life / unique culture <span class="flow-arrow">➔</span> a great place for young people to grow up</div>
+                    </div>
+                    <div class="full-answer">“I currently live in Hanoi, which is the capital city of Vietnam. It is famous for its vibrant street food and rich history.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. How long have you lived in this city?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Born and raised here <span class="flow-arrow">➔</span> for my entire life / 16-17 years <span class="flow-arrow">➔</span> know almost every nook and cranny, especially the coffee shops around my school</div>
+                    </div>
+                    <div class="full-answer">“I was born and raised here, so I’ve lived in this city my entire life. I know almost every coffee shop around my high school.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Is this city your permanent residence?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, most likely <span class="flow-arrow">➔</span> family and friends are all here / convenient <span class="flow-arrow">➔</span> want to go to a university in this city and settle down long term</div>
+                    </div>
+                    <div class="full-answer">“Yes, most likely. My family and friends are all here, and I plan to attend a university in this city to settle down long term.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Do you like this city? Why?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, absolutely love it <span class="flow-arrow">➔</span> amazing food culture / never boring <span class="flow-arrow">➔</span> can easily grab a cheap snack or hang out with classmates at night</div>
+                    </div>
+                    <div class="full-answer">“Yes, I absolutely love it because the food culture here is amazing. It's cheap and there are so many fun places to hang out at night.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>born and raised</td><td><span class="word-highlight">a native inhabitant / spent my formative years here</span></td><td>Sinh ra và lớn lên tại địa phương</td></tr>
+                            <tr><td>nook and cranny</td><td><span class="word-highlight">intricacies / obscure alleyways and hidden spots</span></td><td>Mọi ngóc ngách, con hẻm nhỏ</td></tr>
+                            <tr><td>settle down long term</td><td><span class="word-highlight">establish a permanent domestic base</span></td><td>An cư lạc nghiệp, định cư lâu dài</td></tr>
+                            <tr><td>cheap snack</td><td><span class="word-highlight">highly affordable local delicacies</span></td><td>Món ăn vặt vỉa hè giá rẻ cực ngon</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-morning" class="topic-view">
+                <h2 class="topic-header">🌅 Chủ đề: Morning time</h2>
+                <p style="margin-bottom: 15px; color: #7F8C8D; font-weight: 600; font-style: italic;">(Chủ đề này đã được tối ưu hóa ý tưởng đi học bằng xe điện VinFast cực kỳ trendy cho học sinh hiện đại)</p>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Do you like getting up early in the morning?</li>
+                        <li>What do you usually do in the morning?</li>
+                        <li>Do you spend your mornings doing the same things on both weekends and weekdays? Why?</li>
+                        <li>What did you do in the morning when you were little? Why?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Do you like getting up early in the morning?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Refer to Morning Routines Q1 <span class="flow-arrow">➔</span> night owl / high school start time at 7 AM makes it hard.</div>
+                    </div>
+                    <div class="full-answer">“Honestly, I am a total night owl, so waking up at 6 AM for my 7 AM school schedule is an absolute struggle for me.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What do you usually do in the morning?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Get ready for school <span class="flow-arrow">➔</span> ride my electric bike <span class="flow-arrow">➔</span> go through the morning fresh air and meet my friends at the school gate</div>
+                    </div>
+                    <div class="full-answer">“I quickly get ready for school and then ride my electric bike through the morning fresh air to meet my friends at the gate.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you spend your mornings doing the same things on both weekends and weekdays? Why?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ No, huge difference <span class="flow-arrow">➔</span> weekdays are stressful and rushed <span class="flow-arrow">➔</span> weekends I can stay in bed until 9:30 AM and enjoy a slow breakfast</div>
+                    </div>
+                    <div class="full-answer">“No, there’s a huge difference. Weekdays are super rushed for school, but on weekends I can stay in bed until 9:30 AM and relax.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What did you do in the morning when you were little? Why?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Watched television cartoons <span class="flow-arrow">➔</span> mother fed me breakfast <span class="flow-arrow">➔</span> had no homework worries, so mornings were very peaceful and happy</div>
+                    </div>
+                    <div class="full-answer">“When I was little, I just watched television cartoons while my mom fed me breakfast. I had no school stress back then.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>night owl</td><td><span class="word-highlight">nocturnal individual / naturally inclined to stay up late</span></td><td>Người hay thức khuya, cú đêm</td></tr>
+                            <tr><td>fresh air</td><td><span class="word-highlight">unpolluted crisp morning air</span></td><td>Không khí trong lành buổi sớm</td></tr>
+                            <tr><td>stay in bed</td><td><span class="word-highlight">indulge in a lengthy lie-in / sleep in</span></td><td>Ngủ nướng, nằm lười trên giường</td></tr>
+                            <tr><td>no homework worries</td><td><span class="word-highlight">devoid of any academic anxieties or pressures</span></td><td>Không phải lo lắng chuyện bài vở</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-pets" class="topic-view">
+                <h2 class="topic-header">🐱 Chủ đề: Pets</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>Have you ever had a pet before?</li>
+                        <li>Are there many people keeping pets in your country?</li>
+                        <li>Where do you prefer to keep your pet, indoors or outdoors?</li>
+                        <li>Should schools teach students knowledge about pets or animals?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. Have you ever had a pet before?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, currently have a small puppy <span class="flow-arrow">➔</span> a cute poodle / very playful <span class="flow-arrow">➔</span> always waits for me at the door when I come home from school</div>
+                    </div>
+                    <div class="full-answer">“Yes, my family currently has a small poodle. He is super playful and always waits for me at the door when I come home from school.”</div>
+                    
+                    <div class="direction-label dir-no" style="margin-top: 15px;">Hướng NO</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ No, never <span class="flow-arrow">➔</span> parents don't allow it / strict about cleanliness <span class="flow-arrow">➔</span> hope to adopt a cute cat when I go to university and live independently</div>
+                    </div>
+                    <div class="full-answer">“No, never. My parents don't allow it because they are strict about house cleanliness, but I hope to adopt a cat when I grow up.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Are there many people keeping pets in your country?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, very common nowadays <span class="flow-arrow">➔</span> treat them like family members <span class="flow-arrow">➔</span> young people love raising fluffy cats or dogs for stress relief</div>
+                    </div>
+                    <div class="full-answer">“Yes, it’s very common nowadays. Many young Vietnamese people love raising fluffy cats or small dogs to relieve study and work stress.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Where do you prefer to keep your pet, indoors or outdoors?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Definitely indoors <span class="flow-arrow">➔</span> safer and cleaner / part of family <span class="flow-arrow">➔</span> can play with them easily and protect them from bad weather or thieves</div>
+                    </div>
+                    <div class="full-answer">“I definitely prefer keeping pets indoors because it's cleaner. It protects them from bad weather and allows us to play with them easily.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. Should schools teach students knowledge about pets or animals?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a wonderful idea <span class="flow-arrow">➔</span> teaches kindness and empathy <span class="flow-arrow">➔</span> helps kids learn how to treat animals nicely and protect nature from a young age</div>
+                    </div>
+                    <div class="full-answer">“Yes, it’s a wonderful idea. Teaching animal care at school helps students learn empathy and how to treat animals nicely from a young age.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>very playful</td><td><span class="word-highlight">exceedingly energetic and affectionate</span></td><td>Cực kỳ hiếu động, quấn người</td></tr>
+                            <tr><td>stress relief</td><td><span class="word-highlight">mitigate psychological distress / psychological anchor</span></td><td>Giảm tải áp lực, chỗ dựa tinh thần</td></tr>
+                            <tr><td>protect from thieves</td><td><span class="word-highlight">safeguard from potential pet abduction / dognappers</span></td><td>Bảo vệ thú cưng khỏi nạn trộm chó mèo</td></tr>
+                            <tr><td>teaches kindness</td><td><span class="word-highlight">foster compassion and humane treatment</span></td><td>Nuôi dưỡng lòng nhân ái, đối xử tử tế</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-animals" class="topic-view">
+                <h2 class="topic-header">🦁 Chủ đề: Animals</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What's your favourite animal? Why?</li>
+                        <li>What is the most popular animal in Vietnam?</li>
+                        <li>Have you ever visited a zoo?</li>
+                        <li>How often do you visit a zoo?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What's your favourite animal? Why?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Love cats the most <span class="flow-arrow">➔</span> independent and super fluffy / lazy <span class="flow-arrow">➔</span> watching funny cat videos on TikTok always makes me happy instantly</div>
+                    </div>
+                    <div class="full-answer">“I love cats the most because they are independent and super fluffy. Watching cute cat videos on TikTok always instantly brightens my day.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. What is the most popular animal in Vietnam?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Dogs and cats in cities / water buffaloes in countryside <span class="flow-arrow">➔</span> dogs are loyal friends <span class="flow-arrow">➔</span> buffaloes are famous symbols of traditional farming</div>
+                    </div>
+                    <div class="full-answer">“Dogs and cats are definitely the most popular pets in big cities, while water buffaloes are iconic symbols in the Vietnamese countryside.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Have you ever visited a zoo?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, a few times <span class="flow-arrow">➔</span> primary school field trips / family day out <span class="flow-arrow">➔</span> saw big elephants and feeding monkeys, which was very exciting back then</div>
+                    </div>
+                    <div class="full-answer">“Yes, I visited the local zoo a few times during primary school field trips. Seeing the big elephants up close was very exciting back then.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. How often do you visit a zoo?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Hardly ever now <span class="flow-arrow">➔</span> too busy with school / care more about animal freedom <span class="flow-arrow">➔</span> prefer watching nature documentaries on television instead</div>
+                    </div>
+                    <div class="full-answer">“Hardly ever now. I’m too busy with my high school schedule, and I prefer watching wildlife documentaries on television instead.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>brightens my day</td><td><span class="word-highlight">uplifts my spirits instantly / injects joy into my day</span></td><td>Làm tâm trạng tốt lên ngay lập tức</td></tr>
+                            <tr><td>iconic symbols</td><td><span class="word-highlight">quintessential emblem of rural agriculture</span></td><td>Biểu tượng tiêu biểu của đồng quê</td></tr>
+                            <tr><td>field trips</td><td><span class="word-highlight">educational excursions / school-sponsored outings</span></td><td>Chuyến đi thực tế do trường tổ chức</td></tr>
+                            <tr><td>animal freedom</td><td><span class="word-highlight">ethical implications of animal captivity / wildlife preservation</span></td><td>Vấn đề đạo đức khi giam giữ động vật</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-studies" class="topic-view">
+                <h2 class="topic-header">🎓 Chủ đề: Studies</h2>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What subjects are you studying?</li>
+                        <li>Why did you choose to study that subject?</li>
+                        <li>Do you like your subject?</li>
+                        <li>How much time do you spend on your studies each week?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What subjects are you studying?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Standard high school curriculum <span class="flow-arrow">➔</span> math, literature, chemistry, English <span class="flow-arrow">➔</span> focusing extra time on English because I am preparing for IELTS</div>
+                    </div>
+                    <div class="full-answer">“I’m currently studying the standard high school curriculum, including math, literature, and English. I’m focusing extra time on English for my IELTS test.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Why did you choose to study that subject?</div>
+                    <div class="direction-label dir-normal">Học chuyên khối</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Focus on group A/D subjects <span class="flow-arrow">➔</span> match my strengths / university major requirements <span class="flow-arrow">➔</span> love languages, so focusing on English feels natural to me</div>
+                    </div>
+                    <div class="full-answer">“I focus heavily on English and literature because they match my strengths and are required for my dream university major.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you like your subject?</div>
+                    <div class="direction-label dir-yes">Hướng YES</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Yes, love English <span class="flow-arrow">➔</span> very practical / global language <span class="flow-arrow">➔</span> can watch foreign movies without subtitles and talk to international friends easily</div>
+                    </div>
+                    <div class="full-answer">“Yes, I love learning English because it’s very practical. It helps me watch Hollywood movies without subtitles and talk to foreign friends.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. How much time do you spend on your studies each week?</div>
+                    <div class="direction-label dir-normal">Sát thực tế học sinh Việt Nam</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Around 40 to 50 hours <span class="flow-arrow">➔</span> intense school schedule / extra classes <span class="flow-arrow">➔</span> stay at school until 5 PM and then do homework until 11 PM</div>
+                    </div>
+                    <div class="full-answer">“I spend around 45 hours a week studying. I have regular classes at school until 5 PM and then do homework until late night.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>standard curriculum</td><td><span class="word-highlight">compulsory Ministry-mandated curriculum</span></td><td>Khung chương trình học bắt buộc của Bộ</td></tr>
+                            <tr><td>match my strengths</td><td><span class="word-highlight">align perfectly with my academic aptitudes</span></td><td>Phù hợp với năng lực học tập thế mạnh</td></tr>
+                            <tr><td>very practical</td><td><span class="word-highlight">highly pragmatic / functional in a globalized world</span></td><td>Tính thực tiễn cao trong đời sống</td></tr>
+                            <tr><td>intense schedule</td><td><span class="word-highlight">grueling and demanding academic schedule</span></td><td>Lịch học dày đặc, nặng nề áp lực</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="topic-work" class="topic-view">
+                <h2 class="topic-header">💼 Chủ đề: Work</h2>
+                <p style="margin-bottom: 15px; color: #7F8C8D; font-weight: 600; font-style: italic;">(Mẹo phòng thi dành cho học sinh: Nói thẳng mình là học sinh toàn thời gian, sau đó nêu định hướng tương lai để xử lý câu hỏi dễ dàng)</p>
+                
+                <div class="overview-box">
+                    <h4>📋 Danh sách câu hỏi trong Topic:</h4>
+                    <ol>
+                        <li>What work do you do?</li>
+                        <li>Why did you choose to do that type of work (or that job)?</li>
+                        <li>Do you like your job?</li>
+                        <li>What requirements did you need to meet to get your current job?</li>
+                    </ol>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">1. What work do you do?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Full-time student <span class="flow-arrow">➔</span> don't have a job yet / focus on education <span class="flow-arrow">➔</span> attend a local high school in my city</div>
+                    </div>
+                    <div class="full-answer">“Actually, I am a full-time high school student, so I don’t have a real job yet. My main focus right now is on my education.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">2. Why did you choose to do that type of work (or that job)?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Future goal: want to work in digital marketing <span class="flow-arrow">➔</span> dynamic / creative <span class="flow-arrow">➔</span> love creating trends on social media like TikTok and Instagram</div>
+                    </div>
+                    <div class="full-answer">“In the future, I want to work in digital marketing because it’s creative. I love following viral trends on social media.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">3. Do you like your job?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Speak about my student life <span class="flow-arrow">➔</span> quite stressful but fun <span class="flow-arrow">➔</span> love hanging out with my classmates even though the homework is heavy</div>
+                    </div>
+                    <div class="full-answer">“If you mean my student life, I like it a lot. It’s quite stressful due to exams, but I love hanging out with my classmates every day.”</div>
+                </div>
+
+                <div class="question-block">
+                    <div class="question-text">4. What requirements did you need to meet to get your current job?</div>
+                    <div class="flow-container">
+                        <div class="flow-step">➔ Requirements for my high school entry <span class="flow-arrow">➔</span> pass a difficult entrance exam <span class="flow-arrow">➔</span> had to study day and night in grade 9 to get a slot here</div>
+                    </div>
+                    <div class="full-answer">“To get into my current high school, I had to pass a very competitive entrance exam. I had to study day and night in grade 9 to pass it.”</div>
+                </div>
+
+                <div class="paraphrase-section">
+                    <h3>🚀 Cụm Từ Paraphrase Hay Giúp Đạt Band 7.0+ Speaking</h3>
+                    <table class="para-table">
+                        <thead>
+                            <tr>
+                                <th>Từ/Cụm từ gốc</th>
+                                <th>Cụm từ nâng cấp 7.0+</th>
+                                <th>Ý nghĩa / Ngữ cảnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>full-time student</td><td><span class="word-highlight">devote my time entirely to scholastic pursuits</span></td><td>Dành toàn bộ thời gian học tập, chưa đi làm</td></tr>
+                            <tr><td>viral trends</td><td><span class="word-highlight">highly dynamic algorithm-driven digital content</span></td><td>Xu hướng lan truyền trên mạng xã hội</td></tr>
+                            <tr><td>quite stressful</td><td><span class="word-highlight">characterized by substantial academic friction</span></td><td>Khá áp lực do thi cử bài vở</td></tr>
+                            <tr><td>difficult entrance exam</td><td><span class="word-highlight">highly rigorous and selective screening test</span></td><td>Kỳ thi chuyển cấp khốc liệt tỷ lệ chọi cao</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tabs-sidebar">
+            <button class="tab-btn active" onclick="switchTopic('topic-childhood', this)">🧸 Childhood</button>
+            <button class="tab-btn" onclick="switchTopic('topic-building', this)">🏢 Building</button>
+            <button class="tab-btn" onclick="switchTopic('topic-scenery', this)">🌅 Scenery</button>
+            <button class="tab-btn" onclick="switchTopic('topic-reading', this)">📚 Reading</button>
+            <button class="tab-btn" onclick="switchTopic('topic-sports', this)">👥 Sports Team</button>
+            <button class="tab-btn" onclick="switchTopic('topic-walking', this)">🚶 Walking</button>
+            <button class="tab-btn" onclick="switchTopic('topic-typing', this)">⌨️ Typing</button>
+            <button class="tab-btn" onclick="switchTopic('topic-food', this)">🍲 Food</button>
+            <button class="tab-btn" onclick="switchTopic('topic-sparetime', this)">⏳ Spare Time</button>
+            <button class="tab-btn" onclick="switchTopic('topic-hobby', this)">🎨 Hobby</button>
+            <button class="tab-btn" onclick="switchTopic('topic-lifestages', this)">🎂 Life Stages</button>
+            <button class="tab-btn" onclick="switchTopic('topic-memory', this)">🧠 Memory</button>
+            <button class="tab-btn" onclick="switchTopic('topic-crowded', this)">👥 Crowded Place</button>
+            <button class="tab-btn" onclick="switchTopic('topic-gifts', this)">🎁 Gifts</button>
+            <button class="tab-btn" onclick="switchTopic('topic-city', this)">🏙️ The City</button>
+            <button class="tab-btn" onclick="switchTopic('topic-morning', this)">🌅 Morning Time</button>
+            <button class="tab-btn" onclick="switchTopic('topic-pets', this)">🐱 Pets</button>
+            <button class="tab-btn" onclick="switchTopic('topic-animals', this)">🦁 Animals</button>
+            <button class="tab-btn" onclick="switchTopic('topic-studies', this)">🎓 Studies</button>
+            <button class="tab-btn" onclick="switchTopic('topic-work', this)">💼 Work</button>
+        </div>
+
+    </div>
+
+    <script>
+        function switchTopic(topicId, element) {
+            // Ẩn tất cả các view chủ đề
+            const views = document.querySelectorAll('.topic-view');
+            views.forEach(view => view.classList.remove('active'));
+
+            // Gỡ bỏ class active ở các nút tab cũ
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Hiển thị chủ đề được chọn và kích hoạt tab tương ứng
+            document.getElementById(topicId).classList.add('active');
+            element.classList.add('active');
+
+            // Cuộn mượt mà lên đầu khu vực nội dung
+            document.getElementById('contentArea').scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
